@@ -1,0 +1,11 @@
+id,gender,race,age,income_score,hired
+1,Male,White,25,85,1
+2,Female,Black,30,60,0
+3,Male,White,45,90,1
+4,Female,White,35,75,0
+5,Male,Asian,28,88,1
+6,Female,Asian,40,92,1
+7,Male,Black,22,45,0
+8,Female,White,29,78,1
+9,Male,Hispanic,33,65,0
+10,Female,Hispanic,31,62,0
