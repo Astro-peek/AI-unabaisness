@@ -71,7 +71,12 @@ export default function UploadDashboard({ onDatasetReady, onStartAnalysis, datas
         setError(res.data.error);
         setLoading(false);
       } else {
-         onStartAnalysis(res.data.metrics);
+         onStartAnalysis({
+           ...res.data,
+           file,
+           outcomeCol: selectedOutcome,
+           sensitiveCols: selectedSensitive
+         });
       }
     } catch (err) {
       setError(err.message || 'Error analyzing dataset');
